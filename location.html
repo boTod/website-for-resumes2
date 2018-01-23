@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mySate</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<script src='js/index.js' defer></script>
+</head>
+<body>
+<header>
+	<div class="logo">
+		<a href="index.html"><img class='graficlogo' src="img/logo.png" alt="Logo"></a>
+	</div>
+	<nav>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">HOME</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="blog.html">BLOG</a>
+			<a href="contact.html">CONTACT</a>
+			<a href="about.html">ABOUT</a>
+			<a href="services.html">SERVICES</a>
+			<a href="location.html">LOCATION</a>
+			<a id="menu" href="#" class="icon">&#9776;</a>
+		</div>
+	</nav>
+</header>
+<main>
+<h1>Location</h1>
+	<div id="map"></div>
+</main>
+	<footer id='footer'>
+		<nav>
+			<a href="index.html">HOME</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="blog.html">BLOG</a>
+			<a href="contact.html">CONTACT</a>
+			<a href="about.html">ABOUT</a>
+			<a href="services.html">SERVICES</a>
+			<a href="location.html">LOCATION</a>
+			<a id="menu" href="#" class="icon">&#9776;</a>
+		</nav>
+		<div class="logo">
+			<a href="index.html"><img class='graficlogo' src="img/logo.png" alt=""></a>
+		</div>
+		<div class="social">
+			<a href="#"><img src="img/em.png" alt=""></a>
+			<a href="#"><img src="img/face.png" alt=""></a>
+			<a href="#"><img src="img/goo.png" alt=""></a>
+			<a href="#"><img src="img/inst.png" alt=""></a>
+			<a href="#"><img src="img/pint.png" alt=""></a>
+		</div>
+		<p>My test site</p>
+    <script>
+      function initMap() {
+        var uluru = {lat:49.8326679, lng: 24.0235349};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnLNf6jJlB_XdbgBK0mlgftip3JQ2l_80&callback=initMap">
+    </script>
+	</footer>
+</body>
+</html>
